@@ -1,0 +1,393 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Smooth transitions */
+* {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-duration: 150ms;
+  transition-timing-function: ease-in-out;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+/* Dark mode scrollbar */
+.dark ::-webkit-scrollbar-thumb {
+  background: #555;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
+
+/* Focus styles */
+*:focus-visible {
+  outline: 2px solid #CC785C;
+  outline-offset: 2px;
+}
+
+/* Reduced motion - system preference */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Reduced motion - user toggle */
+.reduced-motion * {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+  scroll-behavior: auto !important;
+}
+
+/* High contrast mode */
+.high-contrast {
+  /* Increase text contrast */
+  --text-primary: #000000;
+  --text-secondary: #1a1a1a;
+  --bg-primary: #ffffff;
+  --bg-secondary: #f5f5f5;
+  --border-color: #000000;
+  --border-width: 2px;
+}
+
+.high-contrast.dark {
+  --text-primary: #ffffff;
+  --text-secondary: #e5e5e5;
+  --bg-primary: #000000;
+  --bg-secondary: #1a1a1a;
+  --border-color: #ffffff;
+}
+
+/* High contrast text */
+.high-contrast body,
+.high-contrast .text-gray-900 {
+  color: var(--text-primary) !important;
+}
+
+.high-contrast .text-gray-700,
+.high-contrast .text-gray-600,
+.high-contrast .text-gray-500 {
+  color: var(--text-secondary) !important;
+}
+
+/* High contrast borders */
+.high-contrast button,
+.high-contrast input,
+.high-contrast textarea,
+.high-contrast select,
+.high-contrast [role="button"] {
+  border-width: var(--border-width) !important;
+  border-color: var(--border-color) !important;
+}
+
+/* High contrast focus indicators */
+.high-contrast *:focus,
+.high-contrast *:focus-visible {
+  outline: 3px solid #CC785C !important;
+  outline-offset: 3px !important;
+}
+
+/* High contrast backgrounds */
+.high-contrast .bg-gray-50,
+.high-contrast .bg-gray-100 {
+  background-color: var(--bg-secondary) !important;
+  border: var(--border-width) solid var(--border-color) !important;
+}
+
+/* High contrast hover states */
+.high-contrast button:hover,
+.high-contrast [role="button"]:hover {
+  border-width: 3px !important;
+  transform: translateY(-1px);
+}
+
+/* High contrast card/panel borders */
+.high-contrast .border,
+.high-contrast [class*="border-"] {
+  border-width: var(--border-width) !important;
+  border-color: var(--border-color) !important;
+}
+
+/* Loading spinner - ensure smooth rotation */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+/* Ensure spinner is hardware accelerated for smooth performance */
+.animate-spin {
+  will-change: transform;
+}
+
+/* Button press effect - subtle scale down */
+button:active,
+[role="button"]:active {
+  transform: scale(0.98);
+}
+
+/* Smooth scale transitions for interactive elements */
+button,
+[role="button"],
+.interactive {
+  transition: all 0.15s ease-in-out;
+}
+
+/* Hover lift effect for cards and interactive panels */
+.hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.dark .hover-lift:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Smooth tooltip appearance */
+@keyframes tooltipFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.tooltip-appear {
+  animation: tooltipFadeIn 0.2s ease-out;
+}
+
+/* Notification slide in from top */
+@keyframes slideInFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.notification-slide-in {
+  animation: slideInFromTop 0.3s ease-out;
+}
+
+/* Drag visual feedback */
+.dragging {
+  opacity: 0.5;
+  cursor: grabbing !important;
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Drop zone highlight */
+.drop-zone-active {
+  background-color: rgba(204, 120, 92, 0.1);
+  border: 2px dashed #CC785C;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Ripple effect container */
+.ripple-container {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Pulse animation for notifications */
+@keyframes pulse-subtle {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+.pulse-subtle {
+  animation: pulse-subtle 2s ease-in-out infinite;
+}
+
+/* Smooth icon rotation */
+.icon-rotate-180 {
+  transition: transform 0.3s ease-in-out;
+}
+
+.icon-rotate-180.rotated {
+  transform: rotate(180deg);
+}
+
+/* Skeleton loading shimmer */
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.skeleton {
+  animation: shimmer 2s infinite linear;
+  background: linear-gradient(
+    90deg,
+    #f0f0f0 25%,
+    #e0e0e0 50%,
+    #f0f0f0 75%
+  );
+  background-size: 1000px 100%;
+}
+
+.dark .skeleton {
+  background: linear-gradient(
+    90deg,
+    #2a2a2a 25%,
+    #3a3a3a 50%,
+    #2a2a2a 75%
+  );
+  background-size: 1000px 100%;
+}
+
+/* Dropdown/Modal fade and slide in */
+@keyframes fadeInSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-in {
+  animation: fadeInSlideDown 0.2s ease-out;
+}
+
+/* Button glow effect on hover */
+.glow-on-hover:hover {
+  box-shadow: 0 0 15px rgba(204, 120, 92, 0.5);
+}
+
+/* Smooth icon transitions */
+.icon-transition {
+  transition: transform 0.2s ease-in-out, color 0.15s ease-in-out;
+}
+
+.icon-transition:hover {
+  transform: scale(1.1);
+}
+
+/* Stagger animation for lists */
+@keyframes staggerFadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.stagger-item {
+  animation: staggerFadeIn 0.3s ease-out;
+  animation-fill-mode: both;
+}
+
+.stagger-item:nth-child(1) { animation-delay: 0s; }
+.stagger-item:nth-child(2) { animation-delay: 0.05s; }
+.stagger-item:nth-child(3) { animation-delay: 0.1s; }
+.stagger-item:nth-child(4) { animation-delay: 0.15s; }
+.stagger-item:nth-child(5) { animation-delay: 0.2s; }
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Improve focus ring visibility */
+:focus-visible {
+  outline: 2px solid #CC785C !important;
+  outline-offset: 2px !important;
+  transition: outline-offset 0.15s ease-in-out;
+}
+
+/* Smooth color transitions for themed elements */
+.smooth-theme-transition {
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+/* Message fade-in animation */
+@keyframes messageFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.message-fade-in {
+  animation: messageFadeIn 0.3s ease-out;
+  animation-fill-mode: both;
+}
+
+/* Hardware acceleration for smooth animation */
+.message-fade-in {
+  will-change: opacity, transform;
+}
+
+/* Respect reduced motion preferences for message fade-in */
+@media (prefers-reduced-motion: reduce) {
+  .message-fade-in {
+    animation: none;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reduced-motion .message-fade-in {
+  animation: none;
+  opacity: 1;
+  transform: translateY(0);
+}

@@ -1,0 +1,75 @@
+/* Typing indicator animation */
+.typing-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 12px 16px;
+  background: rgba(204, 120, 92, 0.1);
+  border-radius: 16px;
+}
+
+.typing-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #CC785C;
+  border-radius: 50%;
+  animation: typing-bounce 1.4s infinite ease-in-out;
+  will-change: transform;
+}
+
+.typing-dot:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.typing-dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.typing-dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes typing-bounce {
+  0%, 60%, 100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  30% {
+    transform: translateY(-10px);
+    opacity: 0.7;
+  }
+}
+
+/* Dark mode adjustments */
+.dark .typing-indicator {
+  background: rgba(204, 120, 92, 0.15);
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .typing-dot {
+    animation: typing-pulse 1.4s infinite ease-in-out;
+  }
+
+  @keyframes typing-pulse {
+    0%, 60%, 100% {
+      opacity: 1;
+    }
+    30% {
+      opacity: 0.4;
+    }
+  }
+}
+
+.reduced-motion .typing-dot {
+  animation: typing-pulse 1.4s infinite ease-in-out;
+}
+
+@keyframes typing-pulse {
+  0%, 60%, 100% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0.4;
+  }
+}

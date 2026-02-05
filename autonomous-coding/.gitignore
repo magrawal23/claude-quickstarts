@@ -1,0 +1,8 @@
+# Agent-generated output directories
+generations/
+
+# Log files
+logs/
+node_modules/
+.vite/
+*.log

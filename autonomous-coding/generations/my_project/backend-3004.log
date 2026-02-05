@@ -1,0 +1,38 @@
+✅ Loaded existing database
+✅ Database initialized successfully
+✅ Backend server running on http://localhost:3004
+📊 Health check: http://localhost:3004/health
+Insert result: { changes: 1, lastInsertRowid: 30 }
+Retrieved conversation: {
+  id: 30,
+  user_id: 1,
+  project_id: null,
+  title: 'New Conversation',
+  model: 'claude-sonnet-4-20250514',
+  created_at: '2026-01-24 19:34:14',
+  updated_at: '2026-01-24 19:34:14',
+  last_message_at: null,
+  is_archived: 0,
+  is_pinned: 0,
+  is_deleted: 0,
+  settings: null,
+  token_count: 0,
+  message_count: 0
+}
+Insert result: { changes: 1, lastInsertRowid: 31 }
+Retrieved conversation: {
+  id: 31,
+  user_id: 1,
+  project_id: null,
+  title: 'New Conversation',
+  model: 'claude-sonnet-4-20250514',
+  created_at: '2026-01-24 19:35:19',
+  updated_at: '2026-01-24 19:35:19',
+  last_message_at: null,
+  is_archived: 0,
+  is_pinned: 0,
+  is_deleted: 0,
+  settings: null,
+  token_count: 0,
+  message_count: 0
+}

@@ -1,0 +1,264 @@
+✅ Loaded existing database
+✅ Database initialized successfully
+✅ Backend server running on http://localhost:3000
+📊 Health check: http://localhost:3000/health
+Insert result: { changes: 1, lastInsertRowid: 367 }
+Retrieved conversation: {
+  id: 367,
+  user_id: 1,
+  project_id: null,
+  title: 'New Conversation',
+  model: 'claude-sonnet-4-5-20250929',
+  created_at: '2026-01-28 00:45:19',
+  updated_at: '2026-01-28 00:45:19',
+  last_message_at: null,
+  is_archived: 0,
+  is_pinned: 0,
+  is_deleted: 0,
+  settings: null,
+  token_count: 0,
+  message_count: 0
+}
+Insert result: { changes: 1, lastInsertRowid: 368 }
+Retrieved conversation: {
+  id: 368,
+  user_id: 1,
+  project_id: null,
+  title: 'New Conversation',
+  model: 'claude-sonnet-4-5-20250929',
+  created_at: '2026-01-28 00:52:51',
+  updated_at: '2026-01-28 00:52:51',
+  last_message_at: null,
+  is_archived: 0,
+  is_pinned: 0,
+  is_deleted: 0,
+  settings: null,
+  token_count: 0,
+  message_count: 0
+}
+Branch request - conversationId: 368 messageId: 1510
+Insert result: { changes: 1, lastInsertRowid: 370 }
+Retrieved conversation: {
+  id: 370,
+  user_id: 1,
+  project_id: null,
+  title: 'New Conversation',
+  model: 'claude-sonnet-4-5-20250929',
+  created_at: '2026-01-28 01:04:43',
+  updated_at: '2026-01-28 01:04:43',
+  last_message_at: null,
+  is_archived: 0,
+  is_pinned: 0,
+  is_deleted: 0,
+  settings: null,
+  token_count: 0,
+  message_count: 0
+}
+Insert result: { changes: 1, lastInsertRowid: 371 }
+Retrieved conversation: {
+  id: 371,
+  user_id: 1,
+  project_id: null,
+  title: 'New Conversation',
+  model: 'claude-sonnet-4-5-20250929',
+  created_at: '2026-01-28 01:08:11',
+  updated_at: '2026-01-28 01:08:11',
+  last_message_at: null,
+  is_archived: 0,
+  is_pinned: 0,
+  is_deleted: 0,
+  settings: null,
+  token_count: 0,
+  message_count: 0
+}
+Insert result: { changes: 1, lastInsertRowid: 372 }
+Retrieved conversation: {
+  id: 372,
+  user_id: 1,
+  project_id: null,
+  title: 'New Conversation',
+  model: 'claude-sonnet-4-5-20250929',
+  created_at: '2026-01-28 01:12:19',
+  updated_at: '2026-01-28 01:12:19',
+  last_message_at: null,
+  is_archived: 0,
+  is_pinned: 0,
+  is_deleted: 0,
+  settings: null,
+  token_count: 0,
+  message_count: 0
+}
+Insert result: { changes: 1, lastInsertRowid: 373 }
+Retrieved conversation: {
+  id: 373,
+  user_id: 1,
+  project_id: null,
+  title: 'New Conversation',
+  model: 'claude-sonnet-4-5-20250929',
+  created_at: '2026-01-28 01:15:08',
+  updated_at: '2026-01-28 01:15:08',
+  last_message_at: null,
+  is_archived: 0,
+  is_pinned: 0,
+  is_deleted: 0,
+  settings: null,
+  token_count: 0,
+  message_count: 0
+}
+Insert result: { changes: 1, lastInsertRowid: 374 }
+Retrieved conversation: {
+  id: 374,
+  user_id: 1,
+  project_id: null,
+  title: 'New Conversation',
+  model: 'claude-sonnet-4-5-20250929',
+  created_at: '2026-01-28 01:18:14',
+  updated_at: '2026-01-28 01:18:14',
+  last_message_at: null,
+  is_archived: 0,
+  is_pinned: 0,
+  is_deleted: 0,
+  settings: null,
+  token_count: 0,
+  message_count: 0
+}
+Insert result: { changes: 1, lastInsertRowid: 375 }
+Retrieved conversation: {
+  id: 375,
+  user_id: 1,
+  project_id: null,
+  title: 'New Conversation',
+  model: 'claude-sonnet-4-5-20250929',
+  created_at: '2026-01-28 01:21:09',
+  updated_at: '2026-01-28 01:21:09',
+  last_message_at: null,
+  is_archived: 0,
+  is_pinned: 0,
+  is_deleted: 0,
+  settings: null,
+  token_count: 0,
+  message_count: 0
+}
+Could not parse suggested prompts JSON: ```json
+[
+  "Can you add error handling to this function?",
+  "How do I optimize this for very large numbers?",
+  "Can you show a recursive version instead?"
+]
+```
+Insert result: { changes: 1, lastInsertRowid: 376 }
+Retrieved conversation: {
+  id: 376,
+  user_id: 1,
+  project_id: null,
+  title: 'New Conversation',
+  model: 'claude-sonnet-4-5-20250929',
+  created_at: '2026-01-28 01:25:02',
+  updated_at: '2026-01-28 01:25:02',
+  last_message_at: null,
+  is_archived: 0,
+  is_pinned: 0,
+  is_deleted: 0,
+  settings: null,
+  token_count: 0,
+  message_count: 0
+}
+Insert result: { changes: 1, lastInsertRowid: 377 }
+Retrieved conversation: {
+  id: 377,
+  user_id: 1,
+  project_id: null,
+  title: 'New Conversation',
+  model: 'claude-sonnet-4-5-20250929',
+  created_at: '2026-01-28 01:29:07',
+  updated_at: '2026-01-28 01:29:07',
+  last_message_at: null,
+  is_archived: 0,
+  is_pinned: 0,
+  is_deleted: 0,
+  settings: null,
+  token_count: 0,
+  message_count: 0
+}
+Insert result: { changes: 1, lastInsertRowid: 378 }
+Retrieved conversation: {
+  id: 378,
+  user_id: 1,
+  project_id: null,
+  title: 'New Conversation',
+  model: 'claude-sonnet-4-5-20250929',
+  created_at: '2026-01-28 01:30:44',
+  updated_at: '2026-01-28 01:30:44',
+  last_message_at: null,
+  is_archived: 0,
+  is_pinned: 0,
+  is_deleted: 0,
+  settings: null,
+  token_count: 0,
+  message_count: 0
+}
+Could not parse suggested prompts JSON: ```json
+[
+  "Can you make the gradient animate?",
+  "How do I change the button colors?",
+  "Can you add more buttons with different alerts?"
+]
+```
+Insert result: { changes: 1, lastInsertRowid: 379 }
+Retrieved conversation: {
+  id: 379,
+  user_id: 1,
+  project_id: null,
+  title: 'New Conversation',
+  model: 'claude-sonnet-4-5-20250929',
+  created_at: '2026-01-28 01:35:09',
+  updated_at: '2026-01-28 01:35:09',
+  last_message_at: null,
+  is_archived: 0,
+  is_pinned: 0,
+  is_deleted: 0,
+  settings: null,
+  token_count: 0,
+  message_count: 0
+}
+Insert result: { changes: 1, lastInsertRowid: 380 }
+Retrieved conversation: {
+  id: 380,
+  user_id: 1,
+  project_id: null,
+  title: 'New Conversation',
+  model: 'claude-sonnet-4-5-20250929',
+  created_at: '2026-01-28 01:41:06',
+  updated_at: '2026-01-28 01:41:06',
+  last_message_at: null,
+  is_archived: 0,
+  is_pinned: 0,
+  is_deleted: 0,
+  settings: null,
+  token_count: 0,
+  message_count: 0
+}
+Could not parse suggested prompts JSON: ```json
+[
+  "How do I handle spaces and punctuation?",
+  "Can you add case-insensitive checking?",
+  "How would I optimize this for performance?"
+]
+```
+Insert result: { changes: 1, lastInsertRowid: 381 }
+Retrieved conversation: {
+  id: 381,
+  user_id: 1,
+  project_id: null,
+  title: 'New Conversation',
+  model: 'claude-sonnet-4-5-20250929',
+  created_at: '2026-01-28 01:45:19',
+  updated_at: '2026-01-28 01:45:19',
+  last_message_at: null,
+  is_archived: 0,
+  is_pinned: 0,
+  is_deleted: 0,
+  settings: null,
+  token_count: 0,
+  message_count: 0
+}
